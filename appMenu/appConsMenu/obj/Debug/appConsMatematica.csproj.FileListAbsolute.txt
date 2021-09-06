@@ -6,3 +6,11 @@ E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\appMenu\appConsMenu\bin\Debug\a
 E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\appMenu\appConsMenu\bin\Debug\libServicios.dll
 E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\appMenu\appConsMenu\bin\Debug\libServicios.pdb
 E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\appMenu\appConsMenu\obj\Debug\appConsMatematica.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Desktop\Platzi Programacion\LAB-POO\appMenu\appConsMenu\bin\Debug\appConsMatematica.exe.config
+C:\Users\Personal\Desktop\Platzi Programacion\LAB-POO\appMenu\appConsMenu\obj\Debug\appConsMatematica.exe
+C:\Users\Personal\Desktop\Platzi Programacion\LAB-POO\appMenu\appConsMenu\obj\Debug\appConsMatematica.pdb
+C:\Users\Personal\Desktop\Platzi Programacion\LAB-POO\appMenu\appConsMenu\obj\Debug\appConsMatematica.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Desktop\Platzi Programacion\LAB-POO\appMenu\appConsMenu\bin\Debug\appConsMatematica.exe
+C:\Users\Personal\Desktop\Platzi Programacion\LAB-POO\appMenu\appConsMenu\bin\Debug\appConsMatematica.pdb
+C:\Users\Personal\Desktop\Platzi Programacion\LAB-POO\appMenu\appConsMenu\bin\Debug\libServicios.dll
+C:\Users\Personal\Desktop\Platzi Programacion\LAB-POO\appMenu\appConsMenu\bin\Debug\libServicios.pdb

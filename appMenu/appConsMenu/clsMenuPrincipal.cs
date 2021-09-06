@@ -56,18 +56,30 @@ namespace appMatematica.Presentacion.Consola
             clsConsola.EscribirSaltarLinea("El Factorial de " + num + " es: " + factorial);
         }
         #endregion
+        private int aux, n1 = 0, n2 = 1, lim, i;
+        private void evFibonacci()
+        {
+            clsConsola.EscribirSaltarLinea("Ingresa la cantidad de numeros que deseas ver de la serie Fibonacci");
+            lim = int.Parse(Console.ReadLine());
+            for (i = 2; i <= lim; i++)
+            {
+                aux = n1 ; n1 = n2; n2 = aux + n1;
+                clsConsola.EscribirSaltarLinea("  " + n1);
+            }
+        }
 
         protected override void configurarMenu()
         {
             atrOpcionSalir = 5;
-            atrItems = new string[7];
+            atrItems = new string[8];
             atrItems[0] = "MENU OPERACIONES ARITMETICAS";
             atrItems[1] = "Suma";
             atrItems[2] = "Resta";
             atrItems[3] = "Producto";
             atrItems[4] = "Division";
             atrItems[5] = "Factorial";
-            atrItems[6] = "Salir";
+            atrItems[6] = "Fibonacci de un número";
+            atrItems[7] = "Salir";
         }
         protected override void procesarOpcion()
         {
@@ -78,7 +90,8 @@ namespace appMatematica.Presentacion.Consola
                 case 3: { evMultiplicacion(); } break;
                 case 4: { evDivision(); } break;
                 case 5: { evFactorial(); } break;
-                case 6: clsConsola.EscribirSaltarLinea("Escogiste Salir"); break;
+                case 6: { evFibonacci(); } break;
+                case 7: clsConsola.EscribirSaltarLinea("Escogiste Salir"); break;
                 default: clsConsola.EscribirSaltarLinea("Escogiste una Opcion erronea"); break;
             }
             clsConsola.LeerTecla();

@@ -8,3 +8,8 @@ E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\libServicios\bin\Debug\libServi
 E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\libServicios\obj\Debug\libServicios.dll
 E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\libServicios\obj\Debug\libServicios.pdb
 E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\libServicios\obj\Debug\libServicios.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Desktop\Platzi Programacion\LAB-POO\libServicios\obj\Debug\libServicios.csprojResolveAssemblyReference.cache
+C:\Users\Personal\Desktop\Platzi Programacion\LAB-POO\libServicios\obj\Debug\libServicios.dll
+C:\Users\Personal\Desktop\Platzi Programacion\LAB-POO\libServicios\obj\Debug\libServicios.pdb
+C:\Users\Personal\Desktop\Platzi Programacion\LAB-POO\libServicios\bin\Debug\libServicios.dll
+C:\Users\Personal\Desktop\Platzi Programacion\LAB-POO\libServicios\bin\Debug\libServicios.pdb
