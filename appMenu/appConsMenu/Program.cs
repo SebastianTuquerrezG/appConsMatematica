@@ -6,7 +6,7 @@ namespace appConsMenu
     {
         static void Main(string[] args)
         {
-            new clsMenuPrincipal();
+            new clsMnuPrincipal();
         }
     }
 } 

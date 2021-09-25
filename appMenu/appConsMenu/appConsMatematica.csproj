@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsMenuAritmetica.cs" />
-    <Compile Include="clsMenuPrincipal.cs" />
+    <Compile Include="clsMnuSeries.cs" />
+    <Compile Include="clsMnuEspeciales.cs" />
+    <Compile Include="clsMnuPrincipal.cs" />
+    <Compile Include="clsMnuOpAritmetica.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
