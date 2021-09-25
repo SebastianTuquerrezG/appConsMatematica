@@ -12,12 +12,18 @@ namespace Servicios.Menus
         #region Operaciones
         public clsMenu()
         {
-            configurarMenu();
+            configurarMenuPrincipal();
             atrOpcionSalir = atrItems.Length - 1;
             iterarMenu();
         }
-        protected virtual void configurarMenu() { }
-        protected virtual void procesarOpcion() { }
+        protected virtual void configurarMenuPrincipal() { }
+        protected virtual void procesarOpcionMPrincipal() { }
+        protected virtual void configurarMenuOpAritmeticas() { }
+        protected virtual void procesarOpcionOpAritmeticas() { }
+        protected virtual void configurarMenuOpEspeciales() { }
+        protected virtual void procesarOpcionOpEspeciales() { }
+        protected virtual void configurarMenuSeries() { }
+        protected virtual void procesarOpcionSeries() { }
 
         protected void imprimirMenu()
         {
@@ -32,7 +38,7 @@ namespace Servicios.Menus
             {
                 imprimirMenu();
                 atrOpcion = clsConsola.Leer<int>("Seleccione una Opcion -->");
-                procesarOpcion();
+                procesarOpcionMPrincipal();
             } while (atrOpcion != atrOpcionSalir);
         }
         #endregion

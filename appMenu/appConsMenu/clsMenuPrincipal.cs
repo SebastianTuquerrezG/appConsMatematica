@@ -56,32 +56,67 @@ namespace appMatematica.Presentacion.Consola
             clsConsola.EscribirSaltarLinea("El Factorial de " + num + " es: " + factorial);
         }
         #endregion
+        #region Fibonacci
         private int aux, n1 = 0, n2 = 1, lim, i;
         private void evFibonacci()
         {
             clsConsola.EscribirSaltarLinea("Ingresa la cantidad de numeros que deseas ver de la serie Fibonacci");
             lim = int.Parse(Console.ReadLine());
-            for (i = 2; i <= lim; i++)
+            clsConsola.EscribirSaltarLinea("  " + n1);
+            for (i = 0; i <= lim; i++)
             {
                 aux = n1 ; n1 = n2; n2 = aux + n1;
                 clsConsola.EscribirSaltarLinea("  " + n1);
             }
         }
+        #endregion
 
-        protected override void configurarMenu()
+        #region MENU PRINCIPAL
+        protected override void configurarMenuPrincipal()
+        {
+            atrOpcionSalir = 4;
+            atrItems = new string[5];
+            atrItems[0] = "MENU PRINCIPAL";
+            atrItems[1] = "Operaciones aritmeticas";
+            atrItems[2] = "Funciones especiales";
+            atrItems[3] = "Series";
+            atrItems[4] = "Salir";
+        }
+        protected override void procesarOpcionMPrincipal()
+        {
+            switch (atrOpcion)
+            {
+                case 1: {
+                        configurarMenuOpAritmeticas();
+                        procesarOpcionOpAritmeticas();   
+                    } break;
+                case 2: {
+                        configurarMenuOpEspeciales();
+                        procesarOpcionOpEspeciales();
+                    } break;
+                case 3: {
+                        configurarMenuSeries();
+                        procesarOpcionSeries();
+                    } break;
+                case 4: clsConsola.EscribirSaltarLinea("Escogiste Salir"); break;
+                default: clsConsola.EscribirSaltarLinea("Escogiste una Opcion erronea"); break;
+            }
+            clsConsola.LeerTecla();
+        }
+        #endregion
+        #region MENU OPERACIONES ARITMETICAS
+        protected override void configurarMenuOpAritmeticas()
         {
             atrOpcionSalir = 5;
-            atrItems = new string[8];
-            atrItems[0] = "MENU OPERACIONES ARITMETICAS";
+            atrItems = new string[6];
+            atrItems[0] = "MENU PRINCIPAL";
             atrItems[1] = "Suma";
             atrItems[2] = "Resta";
-            atrItems[3] = "Producto";
-            atrItems[4] = "Division";
-            atrItems[5] = "Factorial";
-            atrItems[6] = "Fibonacci de un número";
-            atrItems[7] = "Salir";
+            atrItems[3] = "Multiplicar";
+            atrItems[4] = "Dividir";
+            atrItems[5] = "Regresar al menu principal";
         }
-        protected override void procesarOpcion()
+        protected override void procesarOpcionOpAritmeticas()
         {
             switch (atrOpcion)
             {
@@ -89,12 +124,47 @@ namespace appMatematica.Presentacion.Consola
                 case 2: { evResta(); } break;
                 case 3: { evMultiplicacion(); } break;
                 case 4: { evDivision(); } break;
-                case 5: { evFactorial(); } break;
-                case 6: { evFibonacci(); } break;
-                case 7: clsConsola.EscribirSaltarLinea("Escogiste Salir"); break;
+                case 5: clsConsola.EscribirSaltarLinea("Escogiste Salir"); break;
                 default: clsConsola.EscribirSaltarLinea("Escogiste una Opcion erronea"); break;
             }
             clsConsola.LeerTecla();
         }
+        #endregion
+        #region MENU FUNCIONES ESPECIALES
+        protected override void configurarMenuOpEspeciales()
+        {
+            atrOpcionSalir = 2;
+            atrItems = new string[3];
+            atrItems[0] = "MENU FUNCIONES ESPECIALES";
+            atrItems[1] = "Factorital de un numero";
+            atrItems[2] = "Regresar al menu principal";
+        }
+        protected override void procesarOpcionOpEspeciales()
+        {
+            switch(atrOpcion)
+            {
+                case 1: { evFactorial(); } break;
+                case 2: clsConsola.EscribirSaltarLinea("Escogiste Salir"); break;
+            }
+        }
+        #endregion
+        #region MENU SERIES
+        protected override void configurarMenuSeries()
+        {
+            atrOpcionSalir = 2;
+            atrItems = new string[3];
+            atrItems[0] = "MENU SERIES";
+            atrItems[1] = "Fibonacci";
+            atrItems[2] = "Regresar al menu principal";
+        }
+        protected override void procesarOpcionSeries()
+        {
+            switch (atrOpcion)
+            {
+                case 1: { evFactorial(); } break;
+                case 2: clsConsola.EscribirSaltarLinea("Escogiste Salir"); break;
+            }
+        }
+        #endregion
     }
 }
