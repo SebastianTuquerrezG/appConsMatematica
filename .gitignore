@@ -3,3 +3,9 @@ libServicios/obj
 libServicios/bin
 appMenu/appConsMenu/bin
 appMenu/appConsMenu/obj
+.dll
+.exe.config
+.pdb
+.exe.manifest
+.cache
+.txt

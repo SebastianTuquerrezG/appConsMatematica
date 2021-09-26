@@ -1,8 +1,0 @@
-E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\appMenu\appConsMenu\obj\Debug\appConsMenu.csprojResolveAssemblyReference.cache
-E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\appMenu\appConsMenu\bin\Debug\libServicios.dll
-E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\appMenu\appConsMenu\bin\Debug\libServicios.pdb
-E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\appMenu\appConsMenu\bin\Debug\appConsMatematica.exe.config
-E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\appMenu\appConsMenu\bin\Debug\appConsMatematica.exe
-E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\appMenu\appConsMenu\bin\Debug\appConsMatematica.pdb
-E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\appMenu\appConsMenu\obj\Debug\appConsMatematica.exe
-E:\Segundo semestre\POO Chaustre\LabPOO-Alcancia\appMenu\appConsMenu\obj\Debug\appConsMatematica.pdb
