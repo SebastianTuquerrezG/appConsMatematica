@@ -30,9 +30,18 @@ namespace appMatematica.Presentacion.Consola
         }
         private void evDivision()
         {
+            float a,b;
             clsConsola.LimpiarPantalla();
             clsConsola.EscribirSaltarLinea("Escogiste Division");
-            clsConsola.EscribirSaltarLinea("El resultado del producto es " + (clsConsola.Leer<float>("Introduce el dividendo: ") / clsConsola.Leer<float>("Introduce el divisor: ")));
+            a = clsConsola.Leer<float>("Introduce el dividendo: ");
+            b = clsConsola.Leer<float>("Introduce el divisor: ");
+            if(b == 0)
+            {
+                clsConsola.EscribirSaltarLinea("No se puede dividir entre cero, error: {0}");
+            } else
+            {
+                clsConsola.EscribirSaltarLinea("El resultado del producto es " + a / b);
+            }
             clsConsola.LeerTecla();
         }
         
